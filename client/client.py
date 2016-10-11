@@ -73,3 +73,4 @@ class Client:
         print(self._socket.recv(1024).decode())
         self._socket.close()
 
+client_node = Client(5)
