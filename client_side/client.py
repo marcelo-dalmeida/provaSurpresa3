@@ -1,5 +1,3 @@
-__author__ = 'Marcelo d\'Almeida'
-
 import random
 import socket
 import argparse

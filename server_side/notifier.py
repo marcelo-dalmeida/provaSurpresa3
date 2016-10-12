@@ -1,6 +1,3 @@
-__author__ = 'Marcelo d\'Almeida'
-
-
 class Notifier:
 
     def __init__(self, subject):

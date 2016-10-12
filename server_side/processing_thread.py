@@ -1,5 +1,3 @@
-__author__ = 'Marcelo d\'Almeida'
-
 import threading
 import time
 import datetime
@@ -23,8 +21,6 @@ class ProcessingThread(threading.Thread):
 
     def start(self):
 
-        #import time
-        #time.sleep(5)
         thread = threading.Thread.start(self)
 
     def run(self):
@@ -59,10 +55,8 @@ class ProcessingThread(threading.Thread):
                 for k in range(matrix_size):
                     number += matrix_1[i][k] * matrix_2[k][j]
                 result_matrix_file.write(str(number) + "\t")
-                #print(number, end="\t")
             if i != matrix_size - 1:
                 result_matrix_file.write("\n")
-            #print()
 
         result_matrix_file.close()
 
@@ -76,8 +70,6 @@ class ProcessingThread(threading.Thread):
             for j in range(matrix_size):
                 number = matrix_1[i][j] + matrix_2[i][j]
                 result_matrix_file.write(str(number) + "\t")
-                #print(number, end=" ")
             if i != matrix_size - 1:
                 result_matrix_file.write("\n")
-            #print()
         result_matrix_file.close()

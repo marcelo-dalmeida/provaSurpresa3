@@ -1,5 +1,3 @@
-__author__ = 'Marcelo d\'Almeida'
-
 import socket
 from server_side.management_thread import ManagementThread
 
